@@ -1,0 +1,57 @@
+@import './base.css';
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: hsl(150, 100%, 66%);
+}
+p {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+}
+
+button {
+  border-radius: 100%;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-width: 0;
+  background-color: hsl(150, 100%, 66%);
+  position:relative; 
+  top: -2rem;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+@media (hover: hover) {
+  button:hover {
+    -webkit-box-shadow: 0 0 1.5rem hsl(150, 100%, 66%);;
+    box-shadow: 0 0 1.5rem hsl(150, 100%, 66%);;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 0.88rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
