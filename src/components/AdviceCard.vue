@@ -5,6 +5,7 @@ import PatternDividerMobile from './icons/PatternDividerMobile.vue';
 export default {
   name: 'AdviceCard',
   props: {
+    id: Number,
     advice: String,
   },
   components: {
@@ -35,7 +36,7 @@ export default {
 
 <template>
   <div id="card">
-    <h1 class="mb1">Advice of the day</h1>
+    <h1 class="mb1">Advice #{{ id }}</h1>
     <p class="mb2">"{{ advice }}"</p>
     <PatternDividerDesktop v-show="this.screenWidth >= 768" id="divider-desktop"/>
     <PatternDividerMobile v-show="this.screenWidth < 768" id="divider-mobile" />
